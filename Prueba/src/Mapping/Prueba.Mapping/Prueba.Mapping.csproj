@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application.Dto\Prueba.Aplication.Dto\Prueba.Aplication.Dto.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\CrossCutting\CrossCutting.csproj" />
+    <ProjectReference Include="..\..\Domain\Prueba.Domain\Prueba.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

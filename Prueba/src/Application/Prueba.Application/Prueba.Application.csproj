@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application.Dto\Prueba.Aplication.Dto\Prueba.Aplication.Dto.csproj" />
+    <ProjectReference Include="..\..\Domain\Prueba.Domain\Prueba.Domain.csproj" />
+    <ProjectReference Include="..\..\Mapping\Prueba.Mapping\Prueba.Mapping.csproj" />
+    <ProjectReference Include="..\..\Services\Prueba.Services\Prueba.Services.csproj" />
+  </ItemGroup>
+
+</Project>
