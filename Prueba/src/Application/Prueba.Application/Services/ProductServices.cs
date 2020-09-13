@@ -49,7 +49,11 @@ namespace Prueba.Application.Services
 
             var ent = _productRepository.DeleteProduct(id);
 
-            return MappingManagement.GetMappingConfiguration().Map<ProductDTO>(ent);
+            var response = MappingManagement.GetMappingConfiguration().Map<ProductDTO>(ent);
+
+            _amqpService.PublishMessage(QueueLists.REMOVE_ITEM, response);
+
+            return response;
         }
 
         public List<ProductDTO> GetProducts()
@@ -85,11 +89,7 @@ namespace Prueba.Application.Services
                 throw new ArgumentNullException();
             }
 
-            var response = MappingManagement.GetMappingConfiguration().Map<ProductDTO>(ent);
-
-            _amqpService.PublishMessage(QueueLists.REMOVE_ITEM, response);
-
-            return response;
+            return MappingManagement.GetMappingConfiguration().Map<ProductDTO>(ent);
         }
 
         public void NotifyExpiredProducts()

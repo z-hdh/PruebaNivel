@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using CrossCutting.Constants;
-using CrossCutting.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Prueba.Aplication.Dto.DTOs;

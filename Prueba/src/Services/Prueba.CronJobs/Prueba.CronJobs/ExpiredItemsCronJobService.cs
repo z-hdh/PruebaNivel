@@ -5,7 +5,6 @@ using Prueba.Services.CronJobs.Support;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using CrossCutting.Extension;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Prueba.CronJobs

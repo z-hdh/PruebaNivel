@@ -45,6 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClientRemoveItem", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.Application.Unit.Tests", "Prueba\src\Application.Test\Prueba.Application.Tests\Prueba.Application.Unit.Tests.csproj", "{5EEE47FB-5737-4E69-A9D9-C13CCDBAA44B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Documentation", "6 - Documentation", "{7B6C3BAD-4104-4166-9850-DD5E83C552F8}"
+	ProjectSection(SolutionItems) = preProject
+		Prueba\src\Documentation\Arquitectura.pdf = Prueba\src\Documentation\Arquitectura.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
